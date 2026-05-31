@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
+import { ParallaxImage } from "@/components/site/ParallaxImage";
 import { projects, stats, certifications } from "@/lib/portfolio-data";
 import heroAnalytics from "@/assets/hero-analytics.jpg";
 
@@ -29,15 +30,13 @@ function Index() {
           </p>
         </Reveal>
         <Reveal delay={120}>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
-            <img
-              src={heroAnalytics}
-              alt="Editorial illustration of layered data analytics dashboards, line charts, bar graphs and KPI cards"
-              width={1600}
-              height={1024}
-              className="h-auto w-full object-cover"
-            />
-          </div>
+          <ParallaxImage
+            src={heroAnalytics}
+            alt="Editorial illustration of layered data analytics dashboards, line charts, bar graphs and KPI cards"
+            width={1600}
+            height={1024}
+            className="mt-8 rounded-2xl border border-border/60 shadow-sm"
+          />
         </Reveal>
         <Reveal delay={220}>
           <div
