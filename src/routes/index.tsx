@@ -151,8 +151,8 @@ function Index() {
         <div className="container-editorial grid items-center gap-12 py-24 md:grid-cols-[1fr_2fr] md:py-32">
           <Reveal>
             <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-full bg-gradient-to-br from-primary to-accent">
-              <div className="absolute inset-0 flex items-center justify-center font-display text-6xl text-primary-foreground">
-                PSC
+              <div className="absolute inset-0 flex items-center justify-center text-center font-display text-2xl font-bold uppercase tracking-wider text-primary-foreground px-4">
+                DATA ANALYST
               </div>
             </div>
           </Reveal>
