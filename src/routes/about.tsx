@@ -25,7 +25,7 @@ function AboutPage() {
         </Reveal>
         <Reveal delay={120}>
           <h1 className="mt-8 max-w-5xl font-display text-5xl leading-[1.05] text-primary sm:text-6xl md:text-7xl">
-            From Hospitality to Data — <span className="italic text-accent">a different kind of analyst.</span>
+            From Hospitality to Data — <span className="italic text-accent bg-[#bc9d8f]">a different kind of analyst.</span>
           </h1>
         </Reveal>
         <Reveal delay={220}>

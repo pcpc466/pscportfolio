@@ -36,7 +36,7 @@ function ProjectsPage() {
         </Reveal>
         <Reveal delay={120}>
           <h1 className="mt-8 max-w-5xl font-display text-5xl leading-[1.05] text-primary sm:text-6xl md:text-7xl">
-            Case studies, <span className="italic text-accent">not screenshots.</span>
+            Case studies, <span className="italic text-accent bg-[#bc9d8f]">not screenshots.</span>
           </h1>
         </Reveal>
         <Reveal delay={220}>
