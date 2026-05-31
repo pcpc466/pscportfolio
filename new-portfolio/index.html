@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashant Singh Chauhan | Data Analyst & BI Developer</title>
+  <meta name="description" content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
+  <meta name="author" content="Prashant Singh Chauhan">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prashant Singh Chauhan | Data Analyst & BI Developer · Toronto">
+  <meta property="og:description" content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glows -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container flex-row justify-between align-center h-100">
+      <a href="#home" class="logo" onclick="switchTab('home')">
+        <span class="logo-text">CHRONICLE</span>
+        <span class="logo-sub">DATA ANALYST</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="#home" class="nav-link active" data-tab="home" onclick="switchTab('home')">Home</a>
+        <a href="#about" class="nav-link" data-tab="about" onclick="switchTab('about')">About</a>
+        <a href="#projects" class="nav-link" data-tab="projects" onclick="switchTab('projects')">Projects</a>
+        <a href="#skills" class="nav-link" data-tab="skills" onclick="switchTab('skills')">Skills</a>
+        <a href="#contact" class="nav-link" data-tab="contact" onclick="switchTab('contact')">Contact</a>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark mode">
+          <!-- Moon Icon (Dark Mode active, click to turn light) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <!-- Sun Icon (Light Mode active, click to turn dark) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </nav>
+
+      <div class="flex-row gap-2 md-hidden">
+        <button id="theme-toggle-mobile" class="theme-toggle-btn" aria-label="Toggle light/dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="#home" class="mobile-link active" data-tab="home" onclick="switchTab('home')">Home</a>
+        <a href="#about" class="mobile-link" data-tab="about" onclick="switchTab('about')">About</a>
+        <a href="#projects" class="mobile-link" data-tab="projects" onclick="switchTab('projects')">Projects</a>
+        <a href="#skills" class="mobile-link" data-tab="skills" onclick="switchTab('skills')">Skills</a>
+        <a href="#contact" class="mobile-link" data-tab="contact" onclick="switchTab('contact')">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- ==================== HOME SECTION ==================== -->
+    <section id="home" class="tab-pane active">
+      <div class="hero container">
+        <div class="hero-top">
+          <p class="font-mono label-accent">PRASHANT SINGH CHAUHAN — TORONTO, ON</p>
+        </div>
+        
+        <div class="hero-editorial grid md-grid-2">
+          <div class="hero-text-block">
+            <h1 class="hero-heading">
+              Translating Raw Data into <span class="serif italic accent-text">Business Strategy</span>
+            </h1>
+            <p class="hero-body">
+              Data Analyst & BI Developer with 5+ years of experience across hospitality, retail, and financial environments. I specialize in Power BI, SQL, Python, and Tableau to turn complex operations data into visual, actionable insights leadership can trust.
+            </p>
+            <div class="hero-actions flex-row gap-2">
+              <a href="#projects" class="btn btn-primary" onclick="switchTab('projects')">View Case Studies →</a>
+              <a href="#contact" class="btn btn-secondary" onclick="switchTab('contact')">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="editorial-card">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <div class="visual-header">
+                  <div class="dot red"></div>
+                  <div class="dot yellow"></div>
+                  <div class="dot green"></div>
+                  <span class="visual-title">OPERATIONAL ANALYSIS</span>
+                </div>
+                <div class="visual-body">
+                  <!-- Custom SVG dashboard infographic -->
+                  <svg viewBox="0 0 400 220" width="100%" height="100%">
+                    <rect x="10" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
+                    <text x="25" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">AVG DAILY TX</text>
+                    <text x="25" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)" font-weight="bold">1,200+</text>
+
+                    <rect x="140" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
+                    <text x="155" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">WASTE REDUCED</text>
+                    <text x="155" y="55" font-family="var(--font-display)" font-size="18" fill="var(--accent)" font-weight="bold">-12%</text>
+
+                    <rect x="270" y="10" width="120" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
+                    <text x="285" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">REVENUE SURFACED</text>
+                    <text x="285" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)" font-weight="bold">$3M+</text>
+
+                    <!-- Chart section -->
+                    <rect x="10" y="85" width="380" height="120" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
+                    <path d="M 30 170 L 80 140 L 130 150 L 180 110 L 230 130 L 280 95 L 330 115 L 370 100" fill="none" stroke="var(--accent)" stroke-width="2" />
+                    <!-- Points -->
+                    <circle cx="30" cy="170" r="3" fill="var(--primary)" />
+                    <circle cx="80" cy="140" r="3" fill="var(--primary)" />
+                    <circle cx="130" cy="150" r="3" fill="var(--primary)" />
+                    <circle cx="180" cy="110" r="3" fill="var(--primary)" />
+                    <circle cx="230" cy="130" r="3" fill="var(--primary)" />
+                    <circle cx="280" cy="95" r="3" fill="var(--primary)" />
+                    <circle cx="330" cy="115" r="3" fill="var(--primary)" />
+                    <circle cx="370" cy="100" r="3" fill="var(--accent)" />
+                    <!-- Guide grid -->
+                    <line x1="30" y1="180" x2="370" y2="180" stroke="var(--border)" stroke-dasharray="4" />
+                    <line x1="30" y1="130" x2="370" y2="130" stroke="var(--border)" stroke-dasharray="4" />
+                    <line x1="30" y1="90" x2="370" y2="90" stroke="var(--border)" stroke-dasharray="4" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <section class="section-stats bg-muted">
+        <div class="container grid grid-2 md-grid-4 gap-4 py-6">
+          <div class="stat-card">
+            <h2 class="stat-value">5+</h2>
+            <p class="stat-label">Years in Data & BI</p>
+          </div>
+          <div class="stat-card">
+            <h2 class="stat-value">$3M+</h2>
+            <p class="stat-label">Revenue Insights Surfaced</p>
+          </div>
+          <div class="stat-card">
+            <h2 class="stat-value">12%</h2>
+            <p class="stat-label">Food Waste Reduced</p>
+          </div>
+          <div class="stat-card">
+            <h2 class="stat-value">79%</h2>
+            <p class="stat-label">Churn Model Accuracy</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Short Biography Highlight -->
+      <section class="section-short-bio container">
+        <div class="grid md-grid-2 gap-4 items-center">
+          <div class="bio-visual flex-row justify-center">
+            <div class="radial-ring">
+              <span class="radial-text font-serif italic text-accent">Analytical Mindset</span>
+            </div>
+          </div>
+          <div class="bio-text">
+            <p class="font-mono label-accent">BACKGROUND</p>
+            <h2 class="section-title mt-1 font-serif">A different kind of analyst — one who learned to read people before dashboards.</h2>
+            <p class="mt-3">
+              Five years in hospitality operations taught me that every transaction represents a real service moment. That core operational instinct now shapes how I model data, structure KPIs, and present reports to non-technical stakeholders.
+            </p>
+            <a href="#about" class="link-arrow mt-4" onclick="switchTab('about')">Read the full story →</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Certification Ticker -->
+      <div class="marquee-wrapper">
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>IBM Data Analysis using Python</span>
+            <span class="marquee-dot">◆</span>
+            <span>HackerRank SQL Certification</span>
+            <span class="marquee-dot">◆</span>
+            <span>General Assembly Data Analytics Bootcamp</span>
+            <span class="marquee-dot">◆</span>
+            <span>Swiss Hotel Management School — Master's</span>
+            <span class="marquee-dot">◆</span>
+          </div>
+          <!-- Repeated for infinite scroll effect -->
+          <div class="marquee-content" aria-hidden="true">
+            <span>IBM Data Analysis using Python</span>
+            <span class="marquee-dot">◆</span>
+            <span>HackerRank SQL Certification</span>
+            <span class="marquee-dot">◆</span>
+            <span>General Assembly Data Analytics Bootcamp</span>
+            <span class="marquee-dot">◆</span>
+            <span>Swiss Hotel Management School — Master's</span>
+            <span class="marquee-dot">◆</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="tab-pane">
+      <div class="container section-padding">
+        <p class="font-mono label-accent">ABOUT ME</p>
+        <h1 class="page-heading font-serif">
+          From Hospitality to Data — <span class="serif italic accent-text">a different kind of analyst.</span>
+        </h1>
+        
+        <div class="grid md-grid-2 gap-4 mt-4">
+          <div class="lead-text">
+            <p>
+              I didn't take the straight line into analytics. Managing premium beverage portfolios at Four Seasons and building reporting pipelines for a multi-location Tim Hortons franchise group taught me that every dataset tells a story about people and processes.
+            </p>
+          </div>
+          <div class="about-paragraphs">
+            <p>
+              My background in operations enables me to bridge the gap between raw backend engineering and business objectives. I understand the direct, physical business costs behind variance calculations, food waste, customer attrition, and operational bottlenecks.
+            </p>
+            <p class="mt-2">
+              Having completed a intensive Data Analytics bootcamp at General Assembly, I have backed my practical experience with formal training in statistical programming, predictive machine learning models, and database design.
+            </p>
+          </div>
+        </div>
+
+        <!-- Career Timeline -->
+        <div class="timeline-container mt-6">
+          <h2 class="timeline-title font-serif">Career Timeline</h2>
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta font-mono">Aug 2023 – Sep 2025 · Ontario, Canada</div>
+              <h3 class="timeline-role">Operations Analyst <span class="text-accent">— Tim Hortons</span></h3>
+              <ul class="timeline-bullets">
+                <li>Built reporting infrastructure for a multi-location franchise group tracking 1,200+ daily transactions.</li>
+                <li>Automated daily sales reports and metrics dashboards using advanced Pivot Tables, macros, and VLOOKUP.</li>
+                <li>Created forecasting models based on historical trends, reducing annual food waste by 12%.</li>
+              </ul>
+            </div>
+            
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta font-mono">Jun 2022 – May 2023 · Colorado, United States</div>
+              <h3 class="timeline-role">Operations & Reporting Analyst <span class="text-accent">— Four Seasons Hotels & Resorts</span></h3>
+              <ul class="timeline-bullets">
+                <li>Collaborated across departments to design analytics templates and automate P&L trackers.</li>
+                <li>Supported financial reporting for premium beverage sectors generating $50K+ in monthly revenue.</li>
+                <li>Identified inventory audit process flaws, improving accuracy by 10%.</li>
+              </ul>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta font-mono">Sep 2020 – Jun 2022 · Remote</div>
+              <h3 class="timeline-role">Junior Data Analyst <span class="text-accent">— Edvora</span></h3>
+              <ul class="timeline-bullets">
+                <li>Cleaned and parsed structured JSON payloads from core APIs using Power Query.</li>
+                <li>Conducted Exploratory Data Analysis (EDA) on user retention logs for 1,000+ daily active users.</li>
+                <li>Maintained standard data cataloging schemas to help scale growing databases.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Grid -->
+        <div class="education-section mt-6">
+          <h2 class="timeline-title font-serif">Education</h2>
+          <div class="grid md-grid-3 gap-2 mt-2">
+            <div class="edu-card">
+              <p class="font-mono text-accent">Graduating May 2026</p>
+              <h3 class="edu-school">General Assembly</h3>
+              <p class="edu-degree">Data Analytics Bootcamp</p>
+              <p class="edu-location">Canada</p>
+            </div>
+            <div class="edu-card">
+              <p class="font-mono text-accent">Graduated Oct 2020</p>
+              <h3 class="edu-school">Swiss Hotel Management School</h3>
+              <p class="edu-degree">Master's of International Business</p>
+              <p class="edu-location">Switzerland</p>
+            </div>
+            <div class="edu-card">
+              <p class="font-mono text-accent">Graduated May 2018</p>
+              <h3 class="edu-school">PSIT College of Engineering</h3>
+              <p class="edu-degree">Bachelor of Engineering (ECE)</p>
+              <p class="edu-location">India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="tab-pane">
+      <div class="container section-padding">
+        <p class="font-mono label-accent">CASE STUDIES</p>
+        <h1 class="page-heading font-serif">
+          Data Stories, <span class="serif italic accent-text">not just screenshots.</span>
+        </h1>
+        <p class="page-description mt-2">
+          Click on any case study to toggle deep-dive operational details: problem, toolsets, methodology, and direct business outcome.
+        </p>
+
+        <!-- Project Filter Buttons -->
+        <div class="filter-wrapper mt-4">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Power BI">Power BI</button>
+          <button class="filter-btn" data-filter="SQL">SQL</button>
+          <button class="filter-btn" data-filter="Python">Python</button>
+          <button class="filter-btn" data-filter="Tableau">Tableau</button>
+          <button class="filter-btn" data-filter="ML">ML</button>
+        </div>
+
+        <!-- Projects List -->
+        <div class="projects-list mt-4">
+          
+          <!-- Project 1 -->
+          <article class="project-item active" data-tags="Python,SQL,ML,Tableau">
+            <div class="project-summary-header">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">ML</span>
+                <span class="tag">Tableau</span>
+              </div>
+              <h3 class="project-title font-serif">Telecom Customer Churn Analysis & Retention Strategy</h3>
+              <p class="project-lead">
+                Identified a 26.5% churn rate against a 15% industry benchmark across 7,043 customers — surfacing $3M+ in preventable annual revenue loss.
+              </p>
+              <p class="project-metric font-mono">$3M+ revenue loss identified · 79% model accuracy</p>
+              <button class="toggle-detail-btn" aria-label="Toggle project details">+</button>
+            </div>
+            
+            <div class="project-detail-body">
+              <div class="grid md-grid-2 gap-4">
+                <div class="detail-block">
+                  <h4 class="detail-label">PROBLEM</h4>
+                  <p class="detail-text">
+                    A telecom operator needed to understand why customers were leaving and which interventions would retain the highest-value cohorts before the next billing cycle.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">DATA & TOOLS</h4>
+                  <p class="detail-text">
+                    7,043 customer records · MySQL · Python (Pandas, NumPy, Scikit-learn, Seaborn) · Tableau for executive reporting dashboards.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">METHODOLOGY</h4>
+                  <p class="detail-text">
+                    Engineered a SQL pipeline to clean and join contract, billing and service tables. Performed EDA in Pandas, then trained Logistic Regression and Random Forest classifiers — using feature importance to surface tenure, monthly charges and contract type as the dominant churn drivers.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">OUTCOME / IMPACT</h4>
+                  <p class="detail-text">
+                    Random Forest model reached 79% accuracy. Insights translated into a tiered retention playbook estimated to recover $3M+ in annual revenue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-item active" data-tags="Power BI,SQL,DAX,Excel">
+            <div class="project-summary-header">
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">DAX</span>
+                <span class="tag">Excel</span>
+              </div>
+              <h3 class="project-title font-serif">Financial Performance & Risk Reporting Dashboard</h3>
+              <p class="project-lead">
+                A Power BI dashboard analyzing trends, profitability and risk indicators for business decision-making across a multi-entity portfolio.
+              </p>
+              <p class="project-metric font-mono">Drill-through KPIs · DAX calculated metrics</p>
+              <button class="toggle-detail-btn" aria-label="Toggle project details">+</button>
+            </div>
+            
+            <div class="project-detail-body">
+              <div class="grid md-grid-2 gap-4">
+                <div class="detail-block">
+                  <h4 class="detail-label">PROBLEM</h4>
+                  <p class="detail-text">
+                    Finance leadership lacked a unified view of profitability and risk indicators across business units — manual monthly reporting delayed decisions by weeks.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">DATA & TOOLS</h4>
+                  <p class="detail-text">
+                    SQL Server data warehouse · Power BI (Power Query, DAX, Data Modeling) · Excel for source reconciliation audits.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">METHODOLOGY</h4>
+                  <p class="detail-text">
+                    Modeled a star schema in Power BI, authored DAX measures for revenue, margin, variance and risk-adjusted KPIs, and built drill-through pages for entity-level deep-dives.
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <h4 class="detail-label">OUTCOME / IMPACT</h4>
+                  <p class="detail-text">
+                    Replaced manual monthly decks with a live dashboard. Enabled finance leads to investigate variances in minutes rather than days.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="tab-pane">
+      <div class="container section-padding">
+        <p class="font-mono label-accent">TECHNICAL CAPABILITIES</p>
+        <h1 class="page-heading font-serif">
+          The Data Toolkit, <span class="serif italic accent-text">end to end.</span>
+        </h1>
+        
+        <div class="skills-grid grid md-grid-2 gap-4 mt-4">
+          <!-- Skill Card 1 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">Languages & Querying</h3>
+            <div class="skill-pills">
+              <span>SQL (MySQL, SQL Server, Snowflake)</span>
+              <span>Python (Pandas, NumPy)</span>
+              <span>DAX</span>
+              <span>Power Query (M)</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">BI & Visualization</h3>
+            <div class="skill-pills">
+              <span>Power BI</span>
+              <span>Tableau</span>
+              <span>Excel Dashboards</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">Data Science & ML</h3>
+            <div class="skill-pills">
+              <span>Scikit-learn</span>
+              <span>Logistic Regression</span>
+              <span>Random Forest</span>
+              <span>K-Means Clustering</span>
+              <span>Time Series Forecasting</span>
+              <span>Feature Engineering</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">Cloud & Databases</h3>
+            <div class="skill-pills">
+              <span>MySQL</span>
+              <span>SQL Server</span>
+              <span>Snowflake</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">BI Concepts</h3>
+            <div class="skill-pills">
+              <span>ETL Pipelines</span>
+              <span>Star Schema Modeling</span>
+              <span>Data Modeling</span>
+              <span>KPI Reporting</span>
+              <span>Dashboard Development</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="skill-group-card">
+            <h3 class="skill-group-title font-mono">Productivity</h3>
+            <div class="skill-pills">
+              <span>Excel (Pivot Tables, Macros, VLOOKUP)</span>
+              <span>Jira / Agile</span>
+              <span>MS Office Suite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Downloads / Links -->
+        <div class="resume-download-bar mt-6 flex-row gap-2 justify-center align-center">
+          <a href="#" class="btn btn-primary" onclick="alert('Resume file download placeholder')">Download Resume (PDF) ↓</a>
+          <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">View LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="tab-pane">
+      <div class="container section-padding">
+        <div class="grid md-grid-2 gap-6">
+          <div class="contact-info">
+            <p class="font-mono label-accent">CONNECT</p>
+            <h1 class="page-heading font-serif">Let's <span class="serif italic accent-text">talk data.</span></h1>
+            <p class="contact-status mt-2">
+              <span class="status-indicator"></span>
+              <span class="status-text font-mono">Open to Data Analyst roles across Canada</span>
+            </p>
+            
+            <div class="contact-details mt-4">
+              <div class="contact-row">
+                <span class="contact-label font-mono">Email</span>
+                <span class="contact-value"><a href="mailto:Prashantch.94@gmail.com">Prashantch.94@gmail.com</a></span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label font-mono">Phone</span>
+                <span class="contact-value"><a href="tel:+14376650895">+1 (437) 665-0895</a></span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label font-mono">LinkedIn</span>
+                <span class="contact-value"><a href="https://linkedin.com" target="_blank">linkedin.com/in/prashant</a></span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label font-mono">GitHub</span>
+                <span class="contact-value"><a href="https://github.com" target="_blank">github.com/prashant</a></span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label font-mono">Location</span>
+                <span class="contact-value">Toronto, Ontario, Canada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <h3 class="form-title font-mono">Send a message</h3>
+              
+              <div class="form-group">
+                <label for="name" class="form-label font-mono">Your name</label>
+                <input type="text" id="name" required class="form-input">
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label font-mono">Email address</label>
+                <input type="email" id="email" required class="form-input">
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label font-mono">Message</label>
+                <textarea id="message" required rows="5" class="form-textarea" placeholder="Tell me about the role or project..."></textarea>
+              </div>
+
+              <!-- Honeypot -->
+              <input type="text" id="website-honeypot" style="display: none;" tabindex="-1" autocomplete="off">
+              
+              <button type="submit" class="btn btn-primary w-100 mt-2">Send message →</button>
+            </form>
+            <div id="form-success" class="form-success-alert font-mono">
+              Opening your default mail client... Thank you!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex-row justify-between align-center py-4 border-t">
+      <p class="footer-copy font-mono">&copy; 2026 Prashant Singh Chauhan. All rights reserved.</p>
+      <div class="footer-links flex-row gap-2">
+        <a href="https://linkedin.com" target="_blank" class="font-mono hover-accent">LinkedIn</a>
+        <span class="muted font-mono">/</span>
+        <a href="https://github.com" target="_blank" class="font-mono hover-accent">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
