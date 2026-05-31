@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { ParallaxImage } from "@/components/site/ParallaxImage";
 import { projects, stats, certifications } from "@/lib/portfolio-data";
-import heroAnalytics from "@/assets/hero-analytics.jpg";
+import heroAnalytics from "@/assets/hero-analytics.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
