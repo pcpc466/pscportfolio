@@ -85,6 +85,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Prashant Singh Chauhan" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Prashant Singh Chauhan | Data Analyst & BI Developer · Toronto" },
+      { name: "twitter:title", content: "Prashant Singh Chauhan | Data Analyst & BI Developer · Toronto" },
+      { property: "og:description", content: "Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau." },
+      { name: "twitter:description", content: "Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4aa75d07-2181-4e0b-9616-709066663a3f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/4aa75d07-2181-4e0b-9616-709066663a3f" },
     ],
     links: [
       {
