@@ -28,7 +28,14 @@ function Index() {
           </p>
         </Reveal>
         <Reveal delay={120}>
-          <h1 className="mt-8 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1
+            className="mt-8 text-5xl font-semibold leading-[1.02] tracking-[-0.03em] text-primary sm:text-6xl md:text-7xl lg:text-[8.5rem]"
+            style={{
+              fontFamily: '"Fraunces", "Bodoni Moda", ui-serif, Georgia, serif',
+              fontOpticalSizing: "auto",
+              fontVariationSettings: '"opsz" 144, "SOFT" 50, "WONK" 1',
+            }}
+          >
             From{" "}
             <span className="relative inline-block italic font-bold text-accent">
               <span
