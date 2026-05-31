@@ -5,17 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * Editorial portfolio design system — Prashant Singh Chauhan
+ * Aurelian-inspired editorial layout, navy/blue professional palette.
  */
 
 @theme inline {
@@ -59,29 +50,39 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-navy: var(--navy);
+  --color-soft-sky: var(--soft-sky);
+  --color-tint: var(--tint);
+  --font-display: "Bodoni Moda", ui-serif, Georgia, serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+  /* PRD palette mapped to oklch */
+  --background: oklch(1 0 0);                      /* #FFFFFF */
+  --foreground: oklch(0.18 0.018 264);             /* #111827 body */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.18 0.018 264);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --popover-foreground: oklch(0.18 0.018 264);
+  --primary: oklch(0.36 0.07 254);                 /* #1E3A5F navy */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.97 0.02 255);               /* #EEF2FF tint */
+  --secondary-foreground: oklch(0.36 0.07 254);
+  --muted: oklch(0.98 0.012 240);                  /* #F0F9FF soft sky */
+  --muted-foreground: oklch(0.55 0.02 257);        /* #6B7280 */
+  --accent: oklch(0.56 0.21 264);                  /* #2563EB accent blue */
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.04 250);                   /* #BFDBFE */
+  --input: oklch(0.9 0.04 250);
+  --ring: oklch(0.56 0.21 264);
+  --navy: oklch(0.36 0.07 254);
+  --soft-sky: oklch(0.98 0.012 240);
+  --tint: oklch(0.97 0.02 255);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +141,18 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
   }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .container-editorial { max-width: 1240px; margin-inline: auto; padding-inline: 1.5rem; }
+  @media (min-width: 768px) { .container-editorial { padding-inline: 3rem; } }
 }
