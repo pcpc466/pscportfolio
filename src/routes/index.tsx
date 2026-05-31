@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { projects, stats, certifications } from "@/lib/portfolio-data";
+import heroAnalytics from "@/assets/hero-analytics.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,42 +29,15 @@ function Index() {
           </p>
         </Reveal>
         <Reveal delay={120}>
-          <h1
-            className="mt-8 text-5xl font-semibold leading-[1.02] tracking-[-0.03em] text-primary sm:text-6xl md:text-7xl lg:text-[8.5rem]"
-            style={{
-              fontFamily: '"Fraunces", "Bodoni Moda", ui-serif, Georgia, serif',
-              fontOpticalSizing: "auto",
-              fontVariationSettings: '"opsz" 144, "SOFT" 50, "WONK" 1',
-            }}
-          >
-            From{" "}
-            <span className="relative inline-block italic font-bold text-accent">
-              <span
-                aria-hidden
-                className="absolute inset-x-[-0.15em] inset-y-[0.1em] -z-10 rounded-md"
-                style={{
-                  background:
-                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, transparent), color-mix(in oklab, var(--accent) 6%, transparent))",
-                }}
-              />
-              1,200
-            </span>{" "}
-            daily transactions
-            <br />
-            to{" "}
-            <span className="relative inline-block italic font-bold text-accent">
-              <span
-                aria-hidden
-                className="absolute inset-x-[-0.15em] inset-y-[0.1em] -z-10 rounded-md"
-                style={{
-                  background:
-                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, transparent), color-mix(in oklab, var(--accent) 6%, transparent))",
-                }}
-              />
-              $3M
-            </span>{" "}
-            insights.
-          </h1>
+          <div className="mt-8 overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+            <img
+              src={heroAnalytics}
+              alt="Editorial illustration of layered data analytics dashboards, line charts, bar graphs and KPI cards"
+              width={1600}
+              height={1024}
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </Reveal>
         <Reveal delay={220}>
           <div
