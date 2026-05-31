@@ -471,9 +471,25 @@ img {
   margin-left: 0.5rem;
 }
 
-.visual-body svg {
+.card-inner--image {
+  padding-bottom: 0;
+}
+
+.visual-body--image {
+  margin: 0 -1.25rem;
+  overflow: hidden;
+}
+
+.hero-img {
   width: 100%;
+  height: auto;
   display: block;
+  border-radius: 0 0 var(--radius) var(--radius);
+  transition: var(--transition);
+}
+
+.editorial-card:hover .hero-img {
+  transform: scale(1.02);
 }
 
 /* Stats Section */
