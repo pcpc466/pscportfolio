@@ -25,7 +25,7 @@ function SkillsPage() {
         </Reveal>
         <Reveal delay={120}>
           <h1 className="mt-8 max-w-5xl font-display text-5xl leading-[1.05] text-primary sm:text-6xl md:text-7xl">
-            The toolkit, <span className="italic text-accent bg-[#bc9d8f]">end to end.</span>
+            The toolkit, <span className="italic text-accent">end to end.</span>
           </h1>
         </Reveal>
         <Reveal delay={220}>
