@@ -59,8 +59,15 @@ function Index() {
           </h1>
         </Reveal>
         <Reveal delay={220}>
-          <div className="mt-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
-            <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
+          <div
+            className="relative mt-10 grid gap-8 rounded-2xl border border-border/60 p-6 md:grid-cols-[1fr_auto] md:items-end md:p-8"
+            style={{
+              background:
+                "linear-gradient(135deg, color-mix(in oklab, var(--accent) 8%, transparent), color-mix(in oklab, var(--primary) 5%, transparent))",
+              backdropFilter: "blur(2px)",
+            }}
+          >
+            <p className="max-w-2xl text-lg leading-relaxed text-foreground/90">
               Data Analyst & BI Developer with 5+ years across hospitality, retail and financial
               environments — specializing in Power BI, SQL, Python and Tableau to turn raw
               operations data into decisions leadership can act on.
@@ -68,7 +75,11 @@ function Index() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/projects"
-                className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-accent"
+                className="rounded-full px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:shadow-md"
+                style={{
+                  background:
+                    "linear-gradient(135deg, var(--primary), color-mix(in oklab, var(--primary) 70%, var(--accent)))",
+                }}
               >
                 View Projects →
               </Link>
@@ -76,7 +87,11 @@ function Index() {
                 href="/prashant-chauhan-resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-primary px-6 py-3 text-sm font-medium text-primary transition hover:bg-secondary"
+                className="rounded-full border border-primary/70 px-6 py-3 text-sm font-medium text-primary transition hover:border-accent hover:text-accent"
+                style={{
+                  background:
+                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 6%, transparent), color-mix(in oklab, var(--primary) 4%, transparent))",
+                }}
               >
                 Download Resume
               </a>
