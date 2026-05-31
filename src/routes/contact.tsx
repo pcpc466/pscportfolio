@@ -36,7 +36,7 @@ function ContactPage() {
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">Contact</p>
           <h1 className="mt-8 font-display text-5xl leading-[1.05] text-primary md:text-7xl">
-            Let's <span className="italic text-accent bg-[#bc9d8f]">talk data.</span>
+            Let's <span className="italic text-accent">talk data.</span>
           </h1>
           <p className="mt-8 flex items-center gap-3 text-sm">
             <span className="relative flex h-2.5 w-2.5">
