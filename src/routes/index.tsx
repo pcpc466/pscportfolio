@@ -29,8 +29,33 @@ function Index() {
         </Reveal>
         <Reveal delay={120}>
           <h1 className="mt-8 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
-            From <span className="italic font-bold text-accent">1,200</span> daily transactions
-            <br /> to <span className="italic font-bold text-accent">$3M</span> insights.
+            From{" "}
+            <span className="relative inline-block italic font-bold text-accent">
+              <span
+                aria-hidden
+                className="absolute inset-x-[-0.15em] inset-y-[0.1em] -z-10 rounded-md"
+                style={{
+                  background:
+                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, transparent), color-mix(in oklab, var(--accent) 6%, transparent))",
+                }}
+              />
+              1,200
+            </span>{" "}
+            daily transactions
+            <br />
+            to{" "}
+            <span className="relative inline-block italic font-bold text-accent">
+              <span
+                aria-hidden
+                className="absolute inset-x-[-0.15em] inset-y-[0.1em] -z-10 rounded-md"
+                style={{
+                  background:
+                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, transparent), color-mix(in oklab, var(--accent) 6%, transparent))",
+                }}
+              />
+              $3M
+            </span>{" "}
+            insights.
           </h1>
         </Reveal>
         <Reveal delay={220}>
