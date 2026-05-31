@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prashant Singh Chauhan | Data Analyst & BI Developer</title>
-  <meta name="description" content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
+  <meta name="description"
+    content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
   <meta name="author" content="Prashant Singh Chauhan">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Prashant Singh Chauhan | Data Analyst & BI Developer · Toronto">
-  <meta property="og:description" content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
+  <meta property="og:description"
+    content="Portfolio of Prashant Singh Chauhan — Data Analyst & BI Developer based in Toronto. Power BI, SQL, Python, Tableau.">
   <meta property="og:type" content="website">
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Background Decorative Glows -->
@@ -30,10 +36,10 @@
   <header class="header">
     <div class="container flex-row justify-between align-center h-100">
       <a href="#home" class="logo" onclick="switchTab('home')">
-        <span class="logo-text">CHRONICLE</span>
+        <span class="logo-text"> MODERN </span>
         <span class="logo-sub">DATA ANALYST</span>
       </a>
-      
+
       <nav class="nav-desktop">
         <a href="#home" class="nav-link active" data-tab="home" onclick="switchTab('home')">Home</a>
         <a href="#about" class="nav-link" data-tab="about" onclick="switchTab('about')">About</a>
@@ -42,21 +48,49 @@
         <a href="#contact" class="nav-link" data-tab="contact" onclick="switchTab('contact')">Contact</a>
         <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark mode">
           <!-- Moon Icon (Dark Mode active, click to turn light) -->
-          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+            fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
           <!-- Sun Icon (Light Mode active, click to turn dark) -->
-          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+            fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
         </button>
       </nav>
 
       <div class="flex-row gap-2 md-hidden">
         <button id="theme-toggle-mobile" class="theme-toggle-btn" aria-label="Toggle light/dark mode">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+            fill="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+            fill="none">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
         </button>
         <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle menu">☰</button>
       </div>
     </div>
-    
+
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="mobile-menu">
       <nav class="mobile-nav">
@@ -71,21 +105,23 @@
 
   <!-- Main Content Wrapper -->
   <main class="main-content">
-    
+
     <!-- ==================== HOME SECTION ==================== -->
     <section id="home" class="tab-pane active">
       <div class="hero container">
         <div class="hero-top">
           <p class="font-mono label-accent">PRASHANT SINGH CHAUHAN — TORONTO, ON</p>
         </div>
-        
+
         <div class="hero-editorial grid md-grid-2">
           <div class="hero-text-block">
             <h1 class="hero-heading">
               Translating Raw Data into <span class="serif italic accent-text">Business Strategy</span>
             </h1>
             <p class="hero-body">
-              Data Analyst & BI Developer with 5+ years of experience across hospitality, retail, and financial environments. I specialize in Power BI, SQL, Python, and Tableau to turn complex operations data into visual, actionable insights leadership can trust.
+              Data Analyst & BI Developer with 5+ years of experience across hospitality, retail, and financial
+              environments. I specialize in Power BI, SQL, Python, and Tableau to turn complex operations data into
+              visual, actionable insights leadership can trust.
             </p>
             <div class="hero-actions flex-row gap-2">
               <a href="#projects" class="btn btn-primary" onclick="switchTab('projects')">View Case Studies →</a>
@@ -106,21 +142,32 @@
                 <div class="visual-body">
                   <!-- Custom SVG dashboard infographic -->
                   <svg viewBox="0 0 400 220" width="100%" height="100%">
-                    <rect x="10" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
-                    <text x="25" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">AVG DAILY TX</text>
-                    <text x="25" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)" font-weight="bold">1,200+</text>
+                    <rect x="10" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)"
+                      stroke-width="1" />
+                    <text x="25" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)"
+                      font-weight="500">AVG DAILY TX</text>
+                    <text x="25" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)"
+                      font-weight="bold">1,200+</text>
 
-                    <rect x="140" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
-                    <text x="155" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">WASTE REDUCED</text>
-                    <text x="155" y="55" font-family="var(--font-display)" font-size="18" fill="var(--accent)" font-weight="bold">-12%</text>
+                    <rect x="140" y="10" width="115" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)"
+                      stroke-width="1" />
+                    <text x="155" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)"
+                      font-weight="500">WASTE REDUCED</text>
+                    <text x="155" y="55" font-family="var(--font-display)" font-size="18" fill="var(--accent)"
+                      font-weight="bold">-12%</text>
 
-                    <rect x="270" y="10" width="120" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
-                    <text x="285" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)" font-weight="500">REVENUE SURFACED</text>
-                    <text x="285" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)" font-weight="bold">$3M+</text>
+                    <rect x="270" y="10" width="120" height="60" rx="6" fill="var(--secondary)" stroke="var(--border)"
+                      stroke-width="1" />
+                    <text x="285" y="32" font-family="var(--font-sans)" font-size="10" fill="var(--muted)"
+                      font-weight="500">REVENUE SURFACED</text>
+                    <text x="285" y="55" font-family="var(--font-display)" font-size="18" fill="var(--primary)"
+                      font-weight="bold">$3M+</text>
 
                     <!-- Chart section -->
-                    <rect x="10" y="85" width="380" height="120" rx="6" fill="var(--secondary)" stroke="var(--border)" stroke-width="1" />
-                    <path d="M 30 170 L 80 140 L 130 150 L 180 110 L 230 130 L 280 95 L 330 115 L 370 100" fill="none" stroke="var(--accent)" stroke-width="2" />
+                    <rect x="10" y="85" width="380" height="120" rx="6" fill="var(--secondary)" stroke="var(--border)"
+                      stroke-width="1" />
+                    <path d="M 30 170 L 80 140 L 130 150 L 180 110 L 230 130 L 280 95 L 330 115 L 370 100" fill="none"
+                      stroke="var(--accent)" stroke-width="2" />
                     <!-- Points -->
                     <circle cx="30" cy="170" r="3" fill="var(--primary)" />
                     <circle cx="80" cy="140" r="3" fill="var(--primary)" />
@@ -174,15 +221,18 @@
           </div>
           <div class="bio-text">
             <p class="font-mono label-accent">BACKGROUND</p>
-            <h2 class="section-title mt-1 font-serif">A different kind of analyst — one who learned to read people before dashboards.</h2>
+            <h2 class="section-title mt-1 font-serif">A different kind of analyst — one who learned to read people
+              before dashboards.</h2>
             <p class="mt-3">
-              Five years in hospitality operations taught me that every transaction represents a real service moment. That core operational instinct now shapes how I model data, structure KPIs, and present reports to non-technical stakeholders.
+              Five years in hospitality operations taught me that every transaction represents a real service moment.
+              That core operational instinct now shapes how I model data, structure KPIs, and present reports to
+              non-technical stakeholders.
             </p>
             <a href="#about" class="link-arrow mt-4" onclick="switchTab('about')">Read the full story →</a>
           </div>
         </div>
       </section>
-      
+
       <!-- Certification Ticker -->
       <div class="marquee-wrapper">
         <div class="marquee">
@@ -218,19 +268,25 @@
         <h1 class="page-heading font-serif">
           From Hospitality to Data — <span class="serif italic accent-text">a different kind of analyst.</span>
         </h1>
-        
+
         <div class="grid md-grid-2 gap-4 mt-4">
           <div class="lead-text">
             <p>
-              I didn't take the straight line into analytics. Managing premium beverage portfolios at Four Seasons and building reporting pipelines for a multi-location Tim Hortons franchise group taught me that every dataset tells a story about people and processes.
+              I didn't take the straight line into analytics. Managing premium beverage portfolios at Four Seasons and
+              building reporting pipelines for a multi-location Tim Hortons franchise group taught me that every dataset
+              tells a story about people and processes.
             </p>
           </div>
           <div class="about-paragraphs">
             <p>
-              My background in operations enables me to bridge the gap between raw backend engineering and business objectives. I understand the direct, physical business costs behind variance calculations, food waste, customer attrition, and operational bottlenecks.
+              My background in operations enables me to bridge the gap between raw backend engineering and business
+              objectives. I understand the direct, physical business costs behind variance calculations, food waste,
+              customer attrition, and operational bottlenecks.
             </p>
             <p class="mt-2">
-              Having completed a intensive Data Analytics bootcamp at General Assembly, I have backed my practical experience with formal training in statistical programming, predictive machine learning models, and database design.
+              Having completed a intensive Data Analytics bootcamp at General Assembly, I have backed my practical
+              experience with formal training in statistical programming, predictive machine learning models, and
+              database design.
             </p>
           </div>
         </div>
@@ -245,17 +301,20 @@
               <div class="timeline-meta font-mono">Aug 2023 – Sep 2025 · Ontario, Canada</div>
               <h3 class="timeline-role">Operations Analyst <span class="text-accent">— Tim Hortons</span></h3>
               <ul class="timeline-bullets">
-                <li>Built reporting infrastructure for a multi-location franchise group tracking 1,200+ daily transactions.</li>
-                <li>Automated daily sales reports and metrics dashboards using advanced Pivot Tables, macros, and VLOOKUP.</li>
+                <li>Built reporting infrastructure for a multi-location franchise group tracking 1,200+ daily
+                  transactions.</li>
+                <li>Automated daily sales reports and metrics dashboards using advanced Pivot Tables, macros, and
+                  VLOOKUP.</li>
                 <li>Created forecasting models based on historical trends, reducing annual food waste by 12%.</li>
               </ul>
             </div>
-            
+
             <!-- Timeline Item 2 -->
             <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-meta font-mono">Jun 2022 – May 2023 · Colorado, United States</div>
-              <h3 class="timeline-role">Operations & Reporting Analyst <span class="text-accent">— Four Seasons Hotels & Resorts</span></h3>
+              <h3 class="timeline-role">Operations & Reporting Analyst <span class="text-accent">— Four Seasons Hotels &
+                  Resorts</span></h3>
               <ul class="timeline-bullets">
                 <li>Collaborated across departments to design analytics templates and automate P&L trackers.</li>
                 <li>Supported financial reporting for premium beverage sectors generating $50K+ in monthly revenue.</li>
@@ -312,7 +371,8 @@
           Data Stories, <span class="serif italic accent-text">not just screenshots.</span>
         </h1>
         <p class="page-description mt-2">
-          Click on any case study to toggle deep-dive operational details: problem, toolsets, methodology, and direct business outcome.
+          Click on any case study to toggle deep-dive operational details: problem, toolsets, methodology, and direct
+          business outcome.
         </p>
 
         <!-- Project Filter Buttons -->
@@ -327,7 +387,7 @@
 
         <!-- Projects List -->
         <div class="projects-list mt-4">
-          
+
           <!-- Project 1 -->
           <article class="project-item active" data-tags="Python,SQL,ML,Tableau">
             <div class="project-summary-header">
@@ -339,36 +399,42 @@
               </div>
               <h3 class="project-title font-serif">Telecom Customer Churn Analysis & Retention Strategy</h3>
               <p class="project-lead">
-                Identified a 26.5% churn rate against a 15% industry benchmark across 7,043 customers — surfacing $3M+ in preventable annual revenue loss.
+                Identified a 26.5% churn rate against a 15% industry benchmark across 7,043 customers — surfacing $3M+
+                in preventable annual revenue loss.
               </p>
               <p class="project-metric font-mono">$3M+ revenue loss identified · 79% model accuracy</p>
               <button class="toggle-detail-btn" aria-label="Toggle project details">+</button>
             </div>
-            
+
             <div class="project-detail-body">
               <div class="grid md-grid-2 gap-4">
                 <div class="detail-block">
                   <h4 class="detail-label">PROBLEM</h4>
                   <p class="detail-text">
-                    A telecom operator needed to understand why customers were leaving and which interventions would retain the highest-value cohorts before the next billing cycle.
+                    A telecom operator needed to understand why customers were leaving and which interventions would
+                    retain the highest-value cohorts before the next billing cycle.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">DATA & TOOLS</h4>
                   <p class="detail-text">
-                    7,043 customer records · MySQL · Python (Pandas, NumPy, Scikit-learn, Seaborn) · Tableau for executive reporting dashboards.
+                    7,043 customer records · MySQL · Python (Pandas, NumPy, Scikit-learn, Seaborn) · Tableau for
+                    executive reporting dashboards.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">METHODOLOGY</h4>
                   <p class="detail-text">
-                    Engineered a SQL pipeline to clean and join contract, billing and service tables. Performed EDA in Pandas, then trained Logistic Regression and Random Forest classifiers — using feature importance to surface tenure, monthly charges and contract type as the dominant churn drivers.
+                    Engineered a SQL pipeline to clean and join contract, billing and service tables. Performed EDA in
+                    Pandas, then trained Logistic Regression and Random Forest classifiers — using feature importance to
+                    surface tenure, monthly charges and contract type as the dominant churn drivers.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">OUTCOME / IMPACT</h4>
                   <p class="detail-text">
-                    Random Forest model reached 79% accuracy. Insights translated into a tiered retention playbook estimated to recover $3M+ in annual revenue.
+                    Random Forest model reached 79% accuracy. Insights translated into a tiered retention playbook
+                    estimated to recover $3M+ in annual revenue.
                   </p>
                 </div>
               </div>
@@ -386,36 +452,41 @@
               </div>
               <h3 class="project-title font-serif">Financial Performance & Risk Reporting Dashboard</h3>
               <p class="project-lead">
-                A Power BI dashboard analyzing trends, profitability and risk indicators for business decision-making across a multi-entity portfolio.
+                A Power BI dashboard analyzing trends, profitability and risk indicators for business decision-making
+                across a multi-entity portfolio.
               </p>
               <p class="project-metric font-mono">Drill-through KPIs · DAX calculated metrics</p>
               <button class="toggle-detail-btn" aria-label="Toggle project details">+</button>
             </div>
-            
+
             <div class="project-detail-body">
               <div class="grid md-grid-2 gap-4">
                 <div class="detail-block">
                   <h4 class="detail-label">PROBLEM</h4>
                   <p class="detail-text">
-                    Finance leadership lacked a unified view of profitability and risk indicators across business units — manual monthly reporting delayed decisions by weeks.
+                    Finance leadership lacked a unified view of profitability and risk indicators across business units
+                    — manual monthly reporting delayed decisions by weeks.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">DATA & TOOLS</h4>
                   <p class="detail-text">
-                    SQL Server data warehouse · Power BI (Power Query, DAX, Data Modeling) · Excel for source reconciliation audits.
+                    SQL Server data warehouse · Power BI (Power Query, DAX, Data Modeling) · Excel for source
+                    reconciliation audits.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">METHODOLOGY</h4>
                   <p class="detail-text">
-                    Modeled a star schema in Power BI, authored DAX measures for revenue, margin, variance and risk-adjusted KPIs, and built drill-through pages for entity-level deep-dives.
+                    Modeled a star schema in Power BI, authored DAX measures for revenue, margin, variance and
+                    risk-adjusted KPIs, and built drill-through pages for entity-level deep-dives.
                   </p>
                 </div>
                 <div class="detail-block">
                   <h4 class="detail-label">OUTCOME / IMPACT</h4>
                   <p class="detail-text">
-                    Replaced manual monthly decks with a live dashboard. Enabled finance leads to investigate variances in minutes rather than days.
+                    Replaced manual monthly decks with a live dashboard. Enabled finance leads to investigate variances
+                    in minutes rather than days.
                   </p>
                 </div>
               </div>
@@ -433,7 +504,7 @@
         <h1 class="page-heading font-serif">
           The Data Toolkit, <span class="serif italic accent-text">end to end.</span>
         </h1>
-        
+
         <div class="skills-grid grid md-grid-2 gap-4 mt-4">
           <!-- Skill Card 1 -->
           <div class="skill-group-card">
@@ -504,7 +575,8 @@
 
         <!-- Downloads / Links -->
         <div class="resume-download-bar mt-6 flex-row gap-2 justify-center align-center">
-          <a href="#" class="btn btn-primary" onclick="alert('Resume file download placeholder')">Download Resume (PDF) ↓</a>
+          <a href="#" class="btn btn-primary" onclick="alert('Resume file download placeholder')">Download Resume (PDF)
+            ↓</a>
           <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">View LinkedIn Profile</a>
         </div>
       </div>
@@ -521,7 +593,7 @@
               <span class="status-indicator"></span>
               <span class="status-text font-mono">Open to Data Analyst roles across Canada</span>
             </p>
-            
+
             <div class="contact-details mt-4">
               <div class="contact-row">
                 <span class="contact-label font-mono">Email</span>
@@ -533,7 +605,8 @@
               </div>
               <div class="contact-row">
                 <span class="contact-label font-mono">LinkedIn</span>
-                <span class="contact-value"><a href="https://linkedin.com" target="_blank">linkedin.com/in/prashant</a></span>
+                <span class="contact-value"><a href="https://linkedin.com"
+                    target="_blank">linkedin.com/in/prashant</a></span>
               </div>
               <div class="contact-row">
                 <span class="contact-label font-mono">GitHub</span>
@@ -549,25 +622,26 @@
           <div class="contact-form-wrapper">
             <form id="contact-form" class="contact-form">
               <h3 class="form-title font-mono">Send a message</h3>
-              
+
               <div class="form-group">
                 <label for="name" class="form-label font-mono">Your name</label>
                 <input type="text" id="name" required class="form-input">
               </div>
-              
+
               <div class="form-group">
                 <label for="email" class="form-label font-mono">Email address</label>
                 <input type="email" id="email" required class="form-input">
               </div>
-              
+
               <div class="form-group">
                 <label for="message" class="form-label font-mono">Message</label>
-                <textarea id="message" required rows="5" class="form-textarea" placeholder="Tell me about the role or project..."></textarea>
+                <textarea id="message" required rows="5" class="form-textarea"
+                  placeholder="Tell me about the role or project..."></textarea>
               </div>
 
               <!-- Honeypot -->
               <input type="text" id="website-honeypot" style="display: none;" tabindex="-1" autocomplete="off">
-              
+
               <button type="submit" class="btn btn-primary w-100 mt-2">Send message →</button>
             </form>
             <div id="form-success" class="form-success-alert font-mono">
@@ -595,4 +669,5 @@
   <!-- Main JavaScript File -->
   <script src="script.js"></script>
 </body>
+
 </html>
