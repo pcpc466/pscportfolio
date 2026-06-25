@@ -50,7 +50,7 @@ function ContactPage() {
           <div className="mt-12 space-y-5 text-foreground/85">
             <ContactRow label="Email" value={profile.email} href={`mailto:${profile.email}`} />
             <ContactRow label="Phone" value={profile.phone} href={`tel:+14376650895`} />
-            <ContactRow label="LinkedIn" value="linkedin.com/in/prashantchauhanca" href={profile.linkedin} />
+            <ContactRow label="LinkedIn" value="linkedin.com/in/prashantca" href={profile.linkedin} />
             <ContactRow label="GitHub" value="github.com/pcpc466" href={profile.github} />
 
             <ContactRow label="Location" value={profile.location} />

@@ -108,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           jobTitle: "Data Analyst & BI Developer",
           address: { "@type": "PostalAddress", addressLocality: "Toronto", addressRegion: "ON", addressCountry: "Canada" },
           email: "Prashantch.94@gmail.com",
-          sameAs: ["https://www.linkedin.com/in/prashantchauhanca", "https://github.com/pcpc466"],
+          sameAs: ["https://www.linkedin.com/in/prashantca/", "https://github.com/pcpc466"],
         }),
       },
     ],
