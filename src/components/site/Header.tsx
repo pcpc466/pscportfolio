@@ -15,7 +15,10 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="container-editorial flex h-16 items-center justify-between">
         <Link to="/" className="flex items-baseline gap-2">
-          <span className="font-display text-lg font-bold tracking-wider text-primary">DATA ANALYST</span>
+          <span className="font-display text-xl font-semibold text-primary">PSC</span>
+          <span className="hidden text-xs uppercase tracking-[0.2em] text-muted-foreground sm:inline">
+            Data Analyst
+          </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           {nav.map((n) => (

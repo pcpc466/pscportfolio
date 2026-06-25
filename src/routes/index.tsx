@@ -1,9 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
-import { ParallaxImage } from "@/components/site/ParallaxImage";
 import { projects, stats, certifications } from "@/lib/portfolio-data";
-import heroAnalytics from "@/assets/hero-analytics.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -30,24 +28,14 @@ function Index() {
           </p>
         </Reveal>
         <Reveal delay={120}>
-          <ParallaxImage
-            src={heroAnalytics}
-            alt="Editorial illustration of layered data analytics dashboards, line charts, bar graphs and KPI cards"
-            width={1600}
-            height={1024}
-            className="mt-8 rounded-2xl border border-border/60 shadow-sm"
-          />
+          <h1 className="mt-8 font-display text-5xl leading-[1.02] text-primary sm:text-6xl md:text-8xl">
+            From <span className="italic text-accent">1,200</span> daily transactions
+            <br /> to <span className="italic text-accent">$3M</span> insights.
+          </h1>
         </Reveal>
         <Reveal delay={220}>
-          <div
-            className="relative mt-10 grid gap-8 rounded-2xl border border-border/60 p-6 md:grid-cols-[1fr_auto] md:items-end md:p-8"
-            style={{
-              background:
-                "linear-gradient(135deg, color-mix(in oklab, var(--accent) 8%, transparent), color-mix(in oklab, var(--primary) 5%, transparent))",
-              backdropFilter: "blur(2px)",
-            }}
-          >
-            <p className="max-w-2xl text-lg leading-relaxed text-foreground/90">
+          <div className="mt-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+            <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
               Data Analyst & BI Developer with 5+ years across hospitality, retail and financial
               environments — specializing in Power BI, SQL, Python and Tableau to turn raw
               operations data into decisions leadership can act on.
@@ -55,11 +43,7 @@ function Index() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/projects"
-                className="rounded-full px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm transition hover:shadow-md"
-                style={{
-                  background:
-                    "linear-gradient(135deg, var(--primary), color-mix(in oklab, var(--primary) 70%, var(--accent)))",
-                }}
+                className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:bg-accent"
               >
                 View Projects →
               </Link>
@@ -67,11 +51,7 @@ function Index() {
                 href="/prashant-chauhan-resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-primary/70 px-6 py-3 text-sm font-medium text-primary transition hover:border-accent hover:text-accent"
-                style={{
-                  background:
-                    "linear-gradient(135deg, color-mix(in oklab, var(--accent) 6%, transparent), color-mix(in oklab, var(--primary) 4%, transparent))",
-                }}
+                className="rounded-full border border-primary px-6 py-3 text-sm font-medium text-primary transition hover:bg-secondary"
               >
                 Download Resume
               </a>
@@ -151,8 +131,8 @@ function Index() {
         <div className="container-editorial grid items-center gap-12 py-24 md:grid-cols-[1fr_2fr] md:py-32">
           <Reveal>
             <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-full bg-gradient-to-br from-primary to-accent">
-              <div className="absolute inset-0 flex items-center justify-center text-center font-display text-2xl font-bold uppercase tracking-wider text-primary-foreground px-4">
-                DATA ANALYST
+              <div className="absolute inset-0 flex items-center justify-center font-display text-6xl text-primary-foreground">
+                PSC
               </div>
             </div>
           </Reveal>
