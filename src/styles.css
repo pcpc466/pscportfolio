@@ -53,7 +53,7 @@
   --color-navy: var(--navy);
   --color-soft-sky: var(--soft-sky);
   --color-tint: var(--tint);
-  --font-display: "Bodoni Moda", ui-serif, Georgia, serif;
+  --font-display: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
