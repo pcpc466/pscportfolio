@@ -23,11 +23,12 @@ export function Footer() {
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Elsewhere</p>
           <ul className="mt-4 space-y-2 text-sm">
             <li><a href="mailto:Prashantch.94@gmail.com" className="hover:text-accent">Prashantch.94@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="hover:text-accent">LinkedIn</a></li>
-            <li><a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-accent">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/prashantchauhanca" target="_blank" rel="noreferrer" className="hover:text-accent">LinkedIn</a></li>
+            <li><a href="https://github.com/pcpc466" target="_blank" rel="noreferrer" className="hover:text-accent">GitHub</a></li>
             <li><a href="tel:+14376650895" className="hover:text-accent">+1 (437) 665-0895</a></li>
           </ul>
         </div>
+
       </div>
       <div className="border-t border-border">
         <div className="container-editorial flex flex-col items-start justify-between gap-2 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center">

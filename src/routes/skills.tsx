@@ -39,13 +39,14 @@ function SkillsPage() {
               Download Resume (PDF) ↓
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/prashantchauhanca"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-primary px-6 py-3 text-sm font-medium text-primary transition hover:bg-secondary"
             >
               View LinkedIn Profile
             </a>
+
           </div>
         </Reveal>
       </section>
