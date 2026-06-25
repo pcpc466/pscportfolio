@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 export function Footer() {
   return (
     <footer className="mt-32 border-t border-border bg-secondary/40">
@@ -13,10 +11,10 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Navigate</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/about" className="hover:text-accent">About</Link></li>
-            <li><Link to="/projects" className="hover:text-accent">Projects</Link></li>
-            <li><Link to="/skills" className="hover:text-accent">Skills</Link></li>
-            <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
+            <li><a href="#about" className="hover:text-accent">About</a></li>
+            <li><a href="#projects" className="hover:text-accent">Projects</a></li>
+            <li><a href="#skills" className="hover:text-accent">Skills</a></li>
+            <li><a href="#contact" className="hover:text-accent">Contact</a></li>
           </ul>
         </div>
         <div>

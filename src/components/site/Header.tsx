@@ -1,12 +1,11 @@
-import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/projects", label: "Projects" },
-  { to: "/skills", label: "Skills" },
-  { to: "/contact", label: "Contact" },
+  { to: "#home", label: "Home" },
+  { to: "#about", label: "About" },
+  { to: "#projects", label: "Projects" },
+  { to: "#skills", label: "Skills" },
+  { to: "#contact", label: "Contact" },
 ] as const;
 
 export function Header() {
@@ -14,23 +13,21 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="container-editorial flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-baseline gap-2">
+        <a href="#home" className="flex items-baseline gap-2">
           <span className="font-display text-xl font-semibold text-primary">PSC</span>
           <span className="hidden text-xs uppercase tracking-[0.2em] text-muted-foreground sm:inline">
             Data Analyst
           </span>
-        </Link>
+        </a>
         <nav className="hidden items-center gap-8 md:flex">
           {nav.map((n) => (
-            <Link
+            <a
               key={n.to}
-              to={n.to}
+              href={n.to}
               className="text-sm text-foreground/80 transition-colors hover:text-accent"
-              activeProps={{ className: "text-accent" }}
-              activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
-            </Link>
+            </a>
           ))}
           <a
             href="/prashant-chauhan-resume.pdf"
@@ -53,15 +50,14 @@ export function Header() {
         <div className="border-t border-border bg-background md:hidden">
           <div className="container-editorial flex flex-col gap-4 py-6">
             {nav.map((n) => (
-              <Link
+              <a
                 key={n.to}
-                to={n.to}
+                href={n.to}
                 onClick={() => setOpen(false)}
                 className="text-base text-foreground"
-                activeProps={{ className: "text-accent" }}
               >
                 {n.label}
-              </Link>
+              </a>
             ))}
             <a
               href="/prashant-chauhan-resume.pdf"
