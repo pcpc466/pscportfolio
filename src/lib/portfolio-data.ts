@@ -4,7 +4,7 @@ export const profile = {
   location: "Toronto, Ontario, Canada",
   email: "Prashantch.94@gmail.com",
   phone: "+1 (437) 665-0895",
-  linkedin: "https://www.linkedin.com/in/prashantchauhanca",
+  linkedin: "https://www.linkedin.com/in/prashantca/",
   github: "https://github.com/pcpc466",
 };
 
