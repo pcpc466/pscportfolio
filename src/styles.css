@@ -4,6 +4,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html { scroll-behavior: smooth; }
+
 /*
  * Editorial portfolio design system — Prashant Singh Chauhan
  * Aurelian-inspired editorial layout, navy/blue professional palette.
